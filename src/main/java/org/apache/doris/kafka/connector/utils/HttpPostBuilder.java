@@ -45,7 +45,8 @@ public class HttpPostBuilder {
 
     public HttpPostBuilder addCommonHeader() {
         header.put(HttpHeaders.EXPECT, "100-continue");
-        return this;
+		header.put("timezone", "Etc/GMT");
+		return this;
     }
 
     public HttpPostBuilder baseAuth(String user, String password) {
