@@ -48,8 +48,8 @@ public class HttpPutBuilder {
 
     public HttpPutBuilder addFileName(String fileName) {
         header.put("fileName", fileName);
-		header.put("timezone", "Etc/GMT");
-		return this;
+	header.put("timezone", "Etc/GMT");
+	return this;
     }
 
     public HttpPutBuilder setEmptyEntity() {
