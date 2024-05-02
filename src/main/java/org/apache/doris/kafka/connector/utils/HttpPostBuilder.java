@@ -45,7 +45,7 @@ public class HttpPostBuilder {
 
     public HttpPostBuilder addCommonHeader() {
         header.put(HttpHeaders.EXPECT, "100-continue");
-        header.put("timezone", "Etc/GMT");
+        header.put("timezone", "Etc/UTC");
         return this;
     }
 
