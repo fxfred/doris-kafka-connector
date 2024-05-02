@@ -48,7 +48,7 @@ public class HttpPutBuilder {
 
     public HttpPutBuilder addFileName(String fileName) {
         header.put("fileName", fileName);
-        header.put("timezone", "Etc/GMT");
+        header.put("timezone", "Etc/UTC");
         return this;
     }
 
